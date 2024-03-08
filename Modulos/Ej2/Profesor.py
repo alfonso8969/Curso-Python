@@ -1,28 +1,35 @@
 import Persona
 
+
 class Profesor(Persona.Persona):
-    def __init__ (self):
+    def __init__(self):
         self.__Antigüedad = ""
-        self.__Tutorias = ""
-        self.__Telefono = ""
+        self.__Tutorials = ""
+        self.__Phone = ""
+
     def GetAntigüedad(self):
         return self.__Antigüedad
-    def SetAntigüedad(self,antigüedad):
-        self.__Curso = antigüedad
-    def GetTutorias(self):
-        return self.__Tutorias
-    def SetTutorias(self,tutorias):
-        self.__Tutorias = tutorias
-    def GetTelefono(self):
-        return self.__Telefono
-    def SetTelefono(self,telefono):
-        self.__Telefono = telefono
+
+    def SetAntigüedad(self, antigüedad):
+        self.__Antigüedad = antigüedad
+
+    def GetTutorials(self):
+        return self.__Tutorials
+
+    def SetTutorials(self, tutorials):
+        self.__Tutorials = tutorials
+
+    def GePhone(self):
+        return self.__Phone
+
+    def SetPhone(self, phone):
+        self.__Phone = phone
+
     def MostrarProfesor(self):
         print("Profesor:")
-        print("\tNombre:",self.GetNombre())
-        print("\tApellidos:",self.GetApellidos())
-        print("\tEdad:",self.GetEdad())
-        print("\tAntigüedad:",self.__Antigüedad)
-        print("\tTutorias:",self.__Tutorias)
-        print("\tTelefono:",self.__Telefono)
-
+        print("\tNombre:", self.GetNombre())
+        print("\tApellidos:", self.GetApellidos())
+        print("\tEdad:", self.GetEdad())
+        print("\tAntigüedad:", self.__Antigüedad)
+        print("\tTutorías:", self.__Tutorials)
+        print("\tphone:", self.__Phone)

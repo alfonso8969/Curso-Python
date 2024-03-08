@@ -2,11 +2,9 @@
 
 Welcome to our Python course designed for data development and visualization! This course is aimed at individuals who want to learn how to manipulate and visualize data using Python.
 
-
 ## Prerequisites
 
 Basic programming skills in any language is recommended. Familiarity with a data analysis library, such as Pandas, is a plus.
-
 
 ## Course Outline
 
@@ -33,7 +31,6 @@ Basic programming skills in any language is recommended. Familiarity with a data
 - Introduction to Seaborn
 - Statistical Data Visualization
 - Advanced Seaborn Features
-
 
 ## Installation Instructions
 

@@ -3,10 +3,7 @@
 # a los valores de iniciales que le damos
 
 
-from ctypes import Union
-
-
-def sumar(a: str, b: str) -> Union[int, float]:
+def sumar(a: str, b: str):
     """
     This function adds two numbers together.
 
@@ -31,7 +28,7 @@ def sumar(a: str, b: str) -> Union[int, float]:
     print("Type b:", type(b))
 
     try:
-        if a.index(".") > 0 or b.index(".") > 0:
+        if a.__contains__(".") or b.__contains__("."):
             return float(a) + float(b)
         return int(a) + int(b)
     except ValueError:
@@ -40,8 +37,28 @@ def sumar(a: str, b: str) -> Union[int, float]:
 
 
 def restar(a: str, b: str):
+    """
+    This function subtracts two numbers.
+
+    Parameters
+    ----------
+    a : str
+        The first number to subtract.
+    b : str
+        The second number to subtract.
+
+    Returns
+    -------
+    Union[int, float]
+        The difference of the two numbers.
+
+    Raises
+    ------
+    ValueError
+        If the input values are not integers or floats.
+    """
     try:
-        if a.index(".") > 0 or b.index(".") > 0:
+        if a.__contains__(".") or b.__contains__("."):
             return float(a) - float(b)
         return int(a) - int(b)
     except ValueError:
@@ -50,8 +67,28 @@ def restar(a: str, b: str):
 
 
 def multiplicar(a: str, b: str):
+    """
+    This function multiplies two numbers.
+
+    Parameters
+    ----------
+    a : str
+        The first number to multiply.
+    b : str
+        The second number to multiply.
+
+    Returns
+    -------
+    Union[int, float]
+        The product of the two numbers.
+
+    Raises
+    ------
+    ValueError
+        If the input values are not integers or floats.
+    """
     try:
-        if a.index(".") > 0 or b.index(".") > 0:
+        if a.__contains__(".") or b.__contains__("."):
             return float(a) * float(b)
         return int(a) * int(b)
     except ValueError:
@@ -59,7 +96,7 @@ def multiplicar(a: str, b: str):
         return main()
 
 
-def dividir(a: str, b: str) -> Union[int, float]:
+def dividir(a: str, b: str):
     """
     This function divides two numbers.
 
@@ -86,7 +123,7 @@ def dividir(a: str, b: str) -> Union[int, float]:
     print("Type b:", type(b))
 
     try:
-        if a.index(".") > 0 or b.index(".") > 0:
+        if a.__contains__(".") or b.__contains__("."):
             return float(a) / float(b)
         return int(a) / int(b)
     except ValueError:
@@ -98,6 +135,11 @@ def dividir(a: str, b: str) -> Union[int, float]:
 
 
 def main():
+    """
+    This function is the main function of the calculator.
+    It prompts the user for input, and calls the appropriate function
+    based on the user's input for the operation to perform.
+    """
     print("===============================")
     print("Bienvenido")
     print("Calculadora de dos números")
@@ -105,7 +147,7 @@ def main():
     # Pedir al usuario los valores de a y b
     a = input("Introduce el valor de a: ")
     b = input("Introduce el valor de b: ")
-    ope = input("Introduce el operador: ")
+    ope = input("Introduce el operador +, -, * o /: ").lower()
     selectOperation(a, b, ope)
 
 

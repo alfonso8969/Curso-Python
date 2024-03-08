@@ -6,5 +6,9 @@
             "name": "py",
             "database": "${workspaceFolder:libroPython}/BaseDeDatos/Coches.db"
         }
+    ],
+    "cSpell.words": [
+        "Matplotlib",
+        "Seaborn"
     ]
 }
