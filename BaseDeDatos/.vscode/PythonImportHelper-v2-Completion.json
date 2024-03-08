@@ -1,0 +1,146 @@
+[
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": "Delete",
+        "description": "Delete",
+        "peekOfCode": "database = sqlite3.connect('coches.db')\n# Apertura de un cursor\ncursor = database.cursor()\n# Lectura de todos los coches\ncursor.execute(\"SELECT * FROM Coche\")\nprint(\"Mostrando todos los coches:\")\nfor registro in cursor:\n    print(registro)\n# Eliminación de un coche\n# query = \"DELETE FROM Coche WHERE id = 3\"",
+        "detail": "Delete",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "Delete",
+        "description": "Delete",
+        "peekOfCode": "cursor = database.cursor()\n# Lectura de todos los coches\ncursor.execute(\"SELECT * FROM Coche\")\nprint(\"Mostrando todos los coches:\")\nfor registro in cursor:\n    print(registro)\n# Eliminación de un coche\n# query = \"DELETE FROM Coche WHERE id = 3\"\n# cursor.execute(query)\n# database.commit()",
+        "detail": "Delete",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": "Insert",
+        "description": "Insert",
+        "peekOfCode": "database = sqlite3.connect(\"coches.db\")\n# # Crea los registros de fabricantes\n# register1 = (3, \"Renault\", \"911234567\", \"Calle Japón 51\", \"hello@renault.es\")\n# register2 = (4, \"Tesla\", \"919876543\", \"Calle España 121\", \"info@tesla.es\")\n# # Apertura de un cursor e inserción de los fabricantes\ncursor = database.cursor()\n# cursor.execute(\"INSERT INTO Fabricante VALUES(?,?,?,?,?)\", register1)\n# cursor.execute(\"INSERT INTO Fabricante VALUES(?,?,?,?,?)\", register2)\n# # Commit de las operaciones\n# database.commit()",
+        "detail": "Insert",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "Insert",
+        "description": "Insert",
+        "peekOfCode": "cursor = database.cursor()\n# cursor.execute(\"INSERT INTO Fabricante VALUES(?,?,?,?,?)\", register1)\n# cursor.execute(\"INSERT INTO Fabricante VALUES(?,?,?,?,?)\", register2)\n# # Commit de las operaciones\n# database.commit()\n# Crea los registros de los coches\nregister1 = (5, 3, \"Megan\", 1600, \"Azul\")\nregister2 = (6, 3, \"Space\", 2400, \"Negro\")\nregister3 = (7, 4, \"x\", 1200, \"Rojo\")\nregister4 = (8, 4, \"x-2\", 1800, \"Blanco\")",
+        "detail": "Insert",
+        "documentation": {}
+    },
+    {
+        "label": "register1",
+        "kind": 5,
+        "importPath": "Insert",
+        "description": "Insert",
+        "peekOfCode": "register1 = (5, 3, \"Megan\", 1600, \"Azul\")\nregister2 = (6, 3, \"Space\", 2400, \"Negro\")\nregister3 = (7, 4, \"x\", 1200, \"Rojo\")\nregister4 = (8, 4, \"x-2\", 1800, \"Blanco\")\n# Inserción de los modelos de coches\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register1)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register2)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register3)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register4)\n# Commit de las operaciones",
+        "detail": "Insert",
+        "documentation": {}
+    },
+    {
+        "label": "register2",
+        "kind": 5,
+        "importPath": "Insert",
+        "description": "Insert",
+        "peekOfCode": "register2 = (6, 3, \"Space\", 2400, \"Negro\")\nregister3 = (7, 4, \"x\", 1200, \"Rojo\")\nregister4 = (8, 4, \"x-2\", 1800, \"Blanco\")\n# Inserción de los modelos de coches\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register1)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register2)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register3)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register4)\n# Commit de las operaciones\ndatabase.commit()",
+        "detail": "Insert",
+        "documentation": {}
+    },
+    {
+        "label": "register3",
+        "kind": 5,
+        "importPath": "Insert",
+        "description": "Insert",
+        "peekOfCode": "register3 = (7, 4, \"x\", 1200, \"Rojo\")\nregister4 = (8, 4, \"x-2\", 1800, \"Blanco\")\n# Inserción de los modelos de coches\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register1)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register2)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register3)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register4)\n# Commit de las operaciones\ndatabase.commit()\n# Cierra la conexión a la base de datos",
+        "detail": "Insert",
+        "documentation": {}
+    },
+    {
+        "label": "register4",
+        "kind": 5,
+        "importPath": "Insert",
+        "description": "Insert",
+        "peekOfCode": "register4 = (8, 4, \"x-2\", 1800, \"Blanco\")\n# Inserción de los modelos de coches\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register1)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register2)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register3)\ncursor.execute(\"INSERT INTO Coche VALUES(?,?,?,?,?)\", register4)\n# Commit de las operaciones\ndatabase.commit()\n# Cierra la conexión a la base de datos\ndatabase.close()",
+        "detail": "Insert",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": "Select",
+        "description": "Select",
+        "peekOfCode": "database = sqlite3.connect('coches.db')\n# Apertura de un cursor\ncursor = database.cursor()\n# Lectura de todos los fabricantes\ncursor.execute(\"SELECT * FROM Fabricante\")\nprint(\"Mostrando todos los fabricantes:\")\nfor registro in cursor:\n    print(registro)\n# Lectura de todos los coches\ncursor.execute(\"SELECT * FROM Coche\")",
+        "detail": "Select",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "Select",
+        "description": "Select",
+        "peekOfCode": "cursor = database.cursor()\n# Lectura de todos los fabricantes\ncursor.execute(\"SELECT * FROM Fabricante\")\nprint(\"Mostrando todos los fabricantes:\")\nfor registro in cursor:\n    print(registro)\n# Lectura de todos los coches\ncursor.execute(\"SELECT * FROM Coche\")\nprint(\"Mostrando todos los coches:\")\nfor registro in cursor:",
+        "detail": "Select",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": "Update",
+        "description": "Update",
+        "peekOfCode": "database = sqlite3.connect(\"coches.db\")\n# Apertura de un cursor\ncursor = database.cursor()\n# Lectura de todos los fabricantes\ncursor.execute(\"SELECT * FROM Fabricante\")\nprint(\"Mostrando todos los fabricantes:\")\nfor registro in cursor:\n    print(registro)\n# Actualización de un fabricante\nquery = \"UPDATE Fabricante SET Email = \\",
+        "detail": "Update",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "Update",
+        "description": "Update",
+        "peekOfCode": "cursor = database.cursor()\n# Lectura de todos los fabricantes\ncursor.execute(\"SELECT * FROM Fabricante\")\nprint(\"Mostrando todos los fabricantes:\")\nfor registro in cursor:\n    print(registro)\n# Actualización de un fabricante\nquery = \"UPDATE Fabricante SET Email = \\\n        'nuevoemailotravez@honda.es' WHERE id = 1\"\ncursor.execute(query)",
+        "detail": "Update",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "Update",
+        "description": "Update",
+        "peekOfCode": "query = \"UPDATE Fabricante SET Email = \\\n        'nuevoemailotravez@honda.es' WHERE id = 1\"\ncursor.execute(query)\ndatabase.commit()\n# Lectura de todos los fabricantes\ncursor.execute(\"SELECT * FROM Fabricante\")\nprint(\"Mostrando todos los fabricantes:\")\nfor registro in cursor:\n    print(registro)\n# Lectura de todos los coches",
+        "detail": "Update",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "Update",
+        "description": "Update",
+        "peekOfCode": "query = \"UPDATE Coche SET Color = 'Amarillo', Cilindrada = 3500 WHERE id = 1\"\ncursor.execute(query)\nquery = \"UPDATE Coche SET Cilindrada = 1600 WHERE id = 3\"\ncursor.execute(query)\ndatabase.commit()\n# Lectura de todos los coches\ncursor.execute(\"SELECT * FROM Coche\")\nprint(\"Mostrando todos los coches:\")\nfor registro in cursor:\n    print(registro)",
+        "detail": "Update",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "Update",
+        "description": "Update",
+        "peekOfCode": "query = \"UPDATE Coche SET Cilindrada = 1600 WHERE id = 3\"\ncursor.execute(query)\ndatabase.commit()\n# Lectura de todos los coches\ncursor.execute(\"SELECT * FROM Coche\")\nprint(\"Mostrando todos los coches:\")\nfor registro in cursor:\n    print(registro)\n# Cierra la conexión a la base de datos\ndatabase.close()",
+        "detail": "Update",
+        "documentation": {}
+    }
+]
