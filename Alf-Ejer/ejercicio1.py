@@ -3,6 +3,9 @@
 # a los valores de iniciales que le damos
 
 
+import sys
+
+
 def sumar(a: str, b: str):
     """
     This function adds two numbers together.
@@ -143,11 +146,14 @@ def main():
     print("===============================")
     print("Bienvenido")
     print("Calculadora de dos números")
+    print("Introduzca exit() para salir de la calculadora")
     print("===============================")
     # Pedir al usuario los valores de a y b
     a = input("Introduce el valor de a: ")
     b = input("Introduce el valor de b: ")
     ope = input("Introduce el operador +, -, * o /: ").lower()
+    if a.__contains__("exit()") or b.__contains__("exit()") or ope.__contains__("exit()"):
+        sys.exit(0)
     selectOperation(a, b, ope)
 
 

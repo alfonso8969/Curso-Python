@@ -1,4 +1,4 @@
-diassemanaingles = {
+diasSemanaIngles = {
     "Lunes": "Monday",
     "Martes": "Tuesday",
     "Miércoles": "Wednesday",
@@ -6,24 +6,24 @@ diassemanaingles = {
     "Viernes": "Friday",
 }
 
-diasdefindesemanaingles = {
+disFinDeSemanaIngles = {
     "Sábado": "Saturday",
     "Domingo": "Sunday",
 }
 
-for clave, valor in diasdefindesemanaingles.items():
-    diassemanaingles[clave] = valor
+for clave, valor in disFinDeSemanaIngles.items():
+    diasSemanaIngles[clave] = valor
 
 
-print(diassemanaingles["Lunes"])
-print(diassemanaingles["Miércoles"])
-print(diassemanaingles["Viernes"])
+print(diasSemanaIngles["Lunes"])
+print(diasSemanaIngles["Miércoles"])
+print(diasSemanaIngles["Viernes"])
 
 # forma manual
-print(diassemanaingles["Sábado"])
-print(diassemanaingles["Domingo"])
+print(diasSemanaIngles["Sábado"])
+print(diasSemanaIngles["Domingo"])
 
-# diastotalesingles = diassemanaingles | diasdefindesemanaingles
-# forma automatica con un nuevo diccionario
-""" print(diastotalesingles["Sábado"])
-print(diastotalesingles["Domingo"]) """
+# diasTotalIngles = diasSemanaIngles | disFinDeSemanaIngles
+# forma automática con un nuevo diccionario
+""" print(diasTotalIngles["Sábado"])
+print(diasTotalIngles["Domingo"]) """

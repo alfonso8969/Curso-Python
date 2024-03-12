@@ -15,7 +15,7 @@ class Pila:
         return self.__items.pop()
 
     def LeerCima(self):
-        return self.__items[len(self.__items)-1]
+        return self.__items[len(self.__items) - 1]
 
     def NumeroElementos(self):
         return len(self.__items)
@@ -29,36 +29,37 @@ def SimuladorPila():
     pila = Pila()
     while not (fin):
         opc = input("Opción:")
-        if (opc == '1'):
+        if opc == "1":
             item = input("Introduzca elemento a apilar: ")
             pila.Apilar(item)
             print("Elemento apilado: ", item)
-        elif (opc == '2'):
+        elif opc == "2":
             if pila.EstaVacia():
                 print("La pila está vacía, no puede retirarse ningún elemento")
             else:
                 item = pila.LeerCima()
                 pila.Retirar()
                 print("Elemento retirado: ", item)
-        elif (opc == '3'):
+        elif opc == "3":
             if pila.EstaVacia():
                 print("La pila está vacía, no puede leerse la cima")
             else:
                 print("La cima es: ", pila.LeerCima())
-        elif (opc == '4'):
+        elif opc == "4":
             print("La pila tiene ", pila.NumeroElementos(), " elementos")
-        elif (opc == '5'):
+        elif opc == "5":
             if pila.EstaVacia():
                 print("La pila está vacía")
             else:
                 print("La pila no está vacía")
-        elif (opc == '6'):
+        elif opc == "6":
             pila.MostrarPila()
-        elif (opc == '7'):
+        elif opc == "7":
             fin = 1
 
 
-print("""*****************
+print(
+    """*****************
 Simulador de Pila
 *****************
 Menu
@@ -68,5 +69,6 @@ Menu
 4) Número de elementos
 5) ¿Está vacía?
 6) Mostrar pila
-7) Salir""")
+7) Salir"""
+)
 SimuladorPila()

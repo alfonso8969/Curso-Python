@@ -1,1 +1,1 @@
-print(str(17/0))
+print(str(17 / 0))

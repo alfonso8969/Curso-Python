@@ -1,2 +1,1 @@
-print("Primera línea: \"Texto entre comillas\"\nSegunda línea: \'\x24\'")
-
+print("Primera línea: \"Texto entre comillas\"\nSegunda línea: '\x24'")

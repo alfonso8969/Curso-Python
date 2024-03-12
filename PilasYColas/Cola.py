@@ -15,7 +15,7 @@ class Cola:
         return self.__items.pop()
 
     def LeerPrimerElemento(self):
-        return self.__items[len(self.__items)-1]
+        return self.__items[len(self.__items) - 1]
 
     def NumeroElementos(self):
         return len(self.__items)
@@ -29,37 +29,37 @@ def SimuladorCola():
     cola = Cola()
     while not (fin):
         opc = input("Opción:")
-        if (opc == '1'):
+        if opc == "1":
             item = input("Introduzca elemento a encolar: ")
             cola.Encolar(item)
             print("Elemento encolado: ", item)
-        elif (opc == '2'):
+        elif opc == "2":
             if cola.EstaVacia():
-                print("La cola está vacía, no puede desencolarse"
-                      " ningún elemento")
+                print("La cola está vacía, no puede desencolarse" " ningún elemento")
             else:
                 item = cola.LeerPrimerElemento()
                 cola.Desencolar()
                 print("Elemento desencolado: ", item)
-        elif (opc == '3'):
+        elif opc == "3":
             if cola.EstaVacia():
                 print("La cola está vacía, no puede leerse ningún elemento")
             else:
                 print("El primer elemento es: ", cola.LeerPrimerElemento())
-        elif (opc == '4'):
+        elif opc == "4":
             print("La cola tiene ", cola.NumeroElementos(), " elementos")
-        elif (opc == '5'):
+        elif opc == "5":
             if cola.EstaVacia():
                 print("La cola está vacía")
             else:
                 print("La cola no está vacía")
-        elif (opc == '6'):
+        elif opc == "6":
             cola.MostrarCola()
-        elif (opc == '7'):
+        elif opc == "7":
             fin = 1
 
 
-print("""*****************
+print(
+    """*****************
 Simulador de Cola
 *****************
 Menu
@@ -69,5 +69,6 @@ Menu
 4) Número de elementos
 5) ¿Está vacía?
 6) Mostrar cola
-7) Salir""")
+7) Salir"""
+)
 SimuladorCola()

@@ -1,1 +1,1 @@
-print("Estoy","aprendiendo","Python")
+print("Estoy", "aprendiendo", "Python")

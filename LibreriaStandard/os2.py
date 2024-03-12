@@ -1,8 +1,9 @@
 import os
 import shutil
+
 print("¡Cambiando directorio de trabajo!")
-os.chdir("/Users/alfre/Desktop/Ejercicio/")
-print("Nuevo directorio de trabajo: ",os.getcwd())
+os.chdir("C:\\Users\\alfon\\OneDrive\\Escritorio\\Ejercicio")
+print("Nuevo directorio de trabajo: ", os.getcwd())
 print("Contenido del directorio: ", os.listdir())
 print("¡Eliminando el directorio NuevoDirectorio!")
 shutil.rmtree("NuevoDirectorio")
